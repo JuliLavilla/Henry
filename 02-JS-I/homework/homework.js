@@ -37,9 +37,7 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
 
-  suma = x + y;
-
-  System.out.println (suma)
+  return x + y ;
   
 }
 
@@ -47,15 +45,15 @@ function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   resta = x - y;
-  return resta;
+  return x - y ;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
 
-  multi = x * y;
-  System.out.println (multi)
+  
+  return x * y;
   
 }
 
@@ -63,8 +61,8 @@ function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
 
-  divide = x/y;
-  System.out.println (divide);
+  
+  return x / y ;
   
 }
 
@@ -74,11 +72,9 @@ function sonIguales(x, y) {
   // Tu código:
   
   if (x==y) {
-    System.out.println ("true")
-    
-  } else {
-    System.out.println ("false")
-  }
+    return true;
+  }else{
+    return false;
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -86,14 +82,7 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  if(str1 == str2) {
-    System.out.println ("true")
-    
-  } else {
-    System.out.println ("false")
-    
-  }
-  
+  return str1.length === str2.length;
 }
 
 function menosQueNoventa(num) {
@@ -102,12 +91,9 @@ function menosQueNoventa(num) {
   // Tu código:
 
   if (num<90) {
-   System.out.println ("true")
-    
-  } else {
-    System.out.println ("false")
-    
-  }
+    return true;
+}else{
+  return false;
   
 }
 
@@ -116,13 +102,11 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
-  if (50<num) {
-    System.out.println ("true")
-    
-  } else {
-    System.out.println ("false")
-    
-    
+  if (num >50) {
+    return true;
+}else{
+  return false;
+     
   }
 }
 
@@ -140,10 +124,10 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  if (num/2==0){
-    System.out.println("true");
+  if (num%2==0){
+    return true;
 }else{
-    System.out.println("false");
+  return false;
 }
     
   }
@@ -154,12 +138,11 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-
-  if (num/2==0){
-    System.out.println("false");
-}else{
-    System.out.println("true");
-}
+  if(num % 2 === 1) {
+    return true;
+  } else {
+    return false;
+  }
   
 }
 
@@ -168,8 +151,7 @@ function elevarAlCuadrado(num) {
   // ojo: No es raiz cuadrada!
   // Tu código:
 
-  cuadrado = num * num ;
-  System.out.println(cuadrado);
+  return Math.pow(num, 2);
   
 }
 
@@ -177,8 +159,8 @@ function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
   
-  cubo = num * 3;
-  System.out.println(cubo);
+  
+  return num * num* num;
 
 }
 
@@ -193,8 +175,7 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  redondearNumero = (int)Math.ceil(num/100);
-return redondearNumero;
+  return Math.round(num);
 
 
   
@@ -203,14 +184,14 @@ return redondearNumero;
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  System.out.println("" + Math.floor(num));
+  return Math.ceil(num);
 
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  return Math.random()*0 + 1;
 }
 
 function esPositivo(numero) {
