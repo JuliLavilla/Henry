@@ -141,9 +141,9 @@ function esPar(num) {
   // Tu código:
 
   if (num/2==0){
-    System.out.println("par");
+    System.out.println("true");
 }else{
-    System.out.println("Impar");
+    System.out.println("false");
 }
     
   }
@@ -154,6 +154,12 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+
+  if (num/2==0){
+    System.out.println("false");
+}else{
+    System.out.println("true");
+}
   
 }
 
@@ -161,6 +167,9 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
+
+  cuadrado = num * num ;
+  System.out.println(cuadrado);
   
 }
 
@@ -168,24 +177,34 @@ function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
   
+  cubo = num * 3;
+  System.out.println(cubo);
+
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
+
+
   
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
+  redondearNumero = (int)Math.ceil(num/100);
+return redondearNumero;
+
+
   
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  System.out.println("" + Math.floor(num));
+
 }
 
 function numeroRandom() {
