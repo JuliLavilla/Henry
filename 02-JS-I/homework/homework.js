@@ -102,7 +102,7 @@ function menosQueNoventa(num) {
   // Tu código:
 
   if (num<90) {
-    t System.out.println ("true")
+   System.out.println ("true")
     
   } else {
     System.out.println ("false")
