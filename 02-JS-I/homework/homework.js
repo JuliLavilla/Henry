@@ -36,24 +36,35 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
+
+  suma = x + y;
+
+  System.out.println (suma)
   
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  
+  resta = x - y;
+  return resta;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
+
+  multi = x * y;
+  System.out.println (multi)
   
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
+
+  divide = x/y;
+  System.out.println (divide);
   
 }
 
@@ -62,12 +73,26 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
+  if (x==y) {
+    System.out.println ("true")
+    
+  } else {
+    System.out.println ("false")
+  }
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+
+  if(str1 == str2) {
+    System.out.println ("true")
+    
+  } else {
+    System.out.println ("false")
+    
+  }
   
 }
 
@@ -75,6 +100,14 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+
+  if (num<90) {
+    t System.out.println ("true")
+    
+  } else {
+    System.out.println ("false")
+    
+  }
   
 }
 
@@ -83,11 +116,22 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
+  if (50<num) {
+    System.out.println ("true")
+    
+  } else {
+    System.out.println ("false")
+    
+    
+  }
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
+
+ obtenerResto = x/y;
+return obtenerResto;
   
 }
 
@@ -95,8 +139,16 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+
+  if (num1%2==0){
+    System.out.println("par");
+}else{
+    System.out.println("Impar");
 }
+    
+  }
+  
+
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
