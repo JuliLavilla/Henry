@@ -140,7 +140,7 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  if (num1%2==0){
+  if (num/2==0){
     System.out.println("par");
 }else{
     System.out.println("Impar");
